@@ -15,14 +15,17 @@ ActiveRecord::Schema.define(version: 20170804155244) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "heroes", force: :cascade do |t|
+  create_table "heros", force: :cascade do |t|
     t.string "name"
-    t.string "type"
+    t.string "primary"
     t.string "image"
-    t.string "roles"
+    t.string "complexity"
     t.string "description"
+    t.string "playing"
+    t.string "with"
+    t.string "against"
     t.bigint "team_id"
-    t.index ["team_id"], name: "index_heroes_on_team_id"
+    t.index ["team_id"], name: "index_heros_on_team_id"
   end
 
   create_table "teams", force: :cascade do |t|
@@ -30,5 +33,5 @@ ActiveRecord::Schema.define(version: 20170804155244) do
     t.boolean "is_radiant"
   end
 
-  add_foreign_key "heroes", "teams"
+  add_foreign_key "heros", "teams"
 end
