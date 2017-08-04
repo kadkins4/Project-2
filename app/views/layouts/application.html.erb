@@ -1,14 +1,28 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Dota2helper</title>
+    <title>D2H</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" href="/app/assets/stylesheets/application.css">
   </head>
-
   <body>
-    <%= yield %>
+    <nav>
+      <div class="title-div">
+        <h1 class="title">DOTA</h1>
+        <img src="https://krabo.ru/image/cache/data/game/D/DOTA_2/2014_01_23_11_32_40_697_38803_7703_Dota_2_Fyves20131119_2_1sdc326_0-140x140.png" alt="DOTA 2 LOGO" class="logo">
+        <h1 class="title">HUB</h1>
+      </div>
+      <p class="alert"><%= flash[:alert] %></p>
+      <p class="notice"><%= flash[:notice] %></p>
+    </nav>
+    <div class="area">
+      <%= yield %>
+    </div>
+    <footer>
+      <a href="#" class="kla">kla</a>
+    </footer>
   </body>
 </html>
