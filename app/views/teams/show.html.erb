@@ -1,35 +1,103 @@
-<div class="team-overview">
-  <div class="team-name">
-    <%= @team.name %>
-    <p>
-      <%= link_to "HOME", teams_path %>
-      <% if @team.name = "Radiant" %>
-        <%= link_to "DIRE", "/teams/2" %>
-      <% else %>
-        <%= link_to "RADIANT", "/teams/1" %>
-      <% end %>
-    </p>
+<div class="BG2">
+
+  <div class="team-overview">
+    <div class="team-name">
+      <h3><%= @team.name %></h3>
+      <p>
+        <%= link_to "HOME", teams_path %>
+        <% if @team.name = "Radiant" %>
+          <%= link_to "DIRE", "/teams/2" %>
+        <% else %>
+          <%= link_to "RADIANT", "/teams/1" %>
+        <% end %>
+      </p>
+    </div>
+    <div class="team-stat">
+      <p>
+        INT #, STR #, AGI #, AVG RANGE
+        <!-- tally agi, int, str hero count and place as a quick overview -->
+        <!-- eventually range of attacks -->
+      </p>
+    </div>
   </div>
-  <div class="team-stat">
-    <p>
-      INT #, STR #, AGI #, AVG RANGE
-      <!-- tally agi, int, str hero count and place as a quick overview -->
-      <!-- eventually range of attacks -->
-    </p>
+
+  <p style="text-align: center"> *if < 5 heroes add new hero, if == 5, clear all heroes option* </p>
+
+  <div class="team-hero">
+
+    <div class="hero-outer">
+      <img src="https://dota2.gamepedia.com/media/dota2.gamepedia.com/7/72/Agility_primary_attribute_symbol.png?version=dd71cd448ba11e68e5abe4042d3ba899" alt="if primary AGI link image of AGI, etc">
+      <h5>HERO</h5>
+      <div class="hero-inner">
+        <img src="" alt="image">
+        <ul>
+          <li>stat1</li>
+          <li>stat2</li>
+          <li>stat3</li>
+          <li>stat4</li>
+        </ul>
+      </div>
+      <p>clear</p>
+    </div>
+    <div class="hero-outer">
+      <img src="https://dota2.gamepedia.com/media/dota2.gamepedia.com/7/72/Agility_primary_attribute_symbol.png?version=dd71cd448ba11e68e5abe4042d3ba899" alt="if primary AGI link image of AGI, etc">
+      <h5>HERO</h5>
+      <div class="hero-inner">
+        <img src="" alt="image">
+        <ul>
+          <li>stat1</li>
+          <li>stat2</li>
+          <li>stat3</li>
+          <li>stat4</li>
+        </ul>
+      </div>
+      <p>clear</p>
+    </div>
+    <div class="hero-outer">
+      <img src="https://dota2.gamepedia.com/media/dota2.gamepedia.com/7/72/Agility_primary_attribute_symbol.png?version=dd71cd448ba11e68e5abe4042d3ba899" alt="if primary AGI link image of AGI, etc">
+      <h5>HERO</h5>
+      <div class="hero-inner">
+        <img src="" alt="image">
+        <ul>
+          <li>stat1</li>
+          <li>stat2</li>
+          <li>stat3</li>
+          <li>stat4</li>
+        </ul>
+      </div>
+      <p>clear</p>
+    </div>
+    <div class="hero-outer">
+      <img src="https://dota2.gamepedia.com/media/dota2.gamepedia.com/7/72/Agility_primary_attribute_symbol.png?version=dd71cd448ba11e68e5abe4042d3ba899" alt="if primary AGI link image of AGI, etc" class="primary-att-log">
+      <h5>HERO</h5>
+      <div class="hero-inner">
+        <img src="" alt="image">
+        <ul>
+          <li>stat1</li>
+          <li>stat2</li>
+          <li>stat3</li>
+          <li>stat4</li>
+        </ul>
+      </div>
+      <p>clear</p>
+    </div>
+    <div class="hero-outer">
+      <img src="https://dota2.gamepedia.com/media/dota2.gamepedia.com/7/72/Agility_primary_attribute_symbol.png?version=dd71cd448ba11e68e5abe4042d3ba899" alt="if primary AGI link image of AGI, etc">
+      <h5>HERO</h5>
+      <div class="hero-inner">
+        <img src="" alt="image">
+        <ul>
+          <li>stat1</li>
+          <li>stat2</li>
+          <li>stat3</li>
+          <li>stat4</li>
+        </ul>
+      </div>
+      <p>clear</p>
+    </div>
   </div>
-</div>
-<div class="">
-  <div class="hero">
+
+  <div class="overall">
   </div>
-  <div class="hero">
-  </div>
-  <div class="hero">
-  </div>
-  <div class="hero">
-  </div>
-  <div class="hero">
-  </div>
-</div>
-<div class="overall">
 
 </div>

@@ -143,6 +143,35 @@ h3, h5 {
   margin: 10px;
 }
 
+.BG2 {
+  background: url('http://cdn.dota2.com/apps/dota2/images/700/pregame/bg_07.jpg') no-repeat center center;
+  background-size: cover;
+  width: 95%;
+}
+
 .team-overview {
-  background-color: grey;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.team-hero {
+  display: flex;
+  flex-direction: row;
+}
+
+.hero-outer {
+  display: flex;
+  flex-direction: column;
+  margin: .5%;
+  border: 2px solid white;
+  border-radius: 3%;
+  padding: 1%;
+  background-color: rgba(200,200,200,.5);
+  text-align: center;
+  flex-grow: 1;
+}
+
+.primary-att-logo {
+  width: 25%;
 }
