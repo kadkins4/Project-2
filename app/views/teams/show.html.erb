@@ -1,0 +1,35 @@
+<div class="team-overview">
+  <div class="team-name">
+    <%= @team.name %>
+    <p>
+      <%= link_to "HOME", teams_path %>
+      <% if @team.name = "Radiant" %>
+        <%= link_to "DIRE", "/teams/2" %>
+      <% else %>
+        <%= link_to "RADIANT", "/teams/1" %>
+      <% end %>
+    </p>
+  </div>
+  <div class="team-stat">
+    <p>
+      INT #, STR #, AGI #, AVG RANGE
+      <!-- tally agi, int, str hero count and place as a quick overview -->
+      <!-- eventually range of attacks -->
+    </p>
+  </div>
+</div>
+<div class="">
+  <div class="hero">
+  </div>
+  <div class="hero">
+  </div>
+  <div class="hero">
+  </div>
+  <div class="hero">
+  </div>
+  <div class="hero">
+  </div>
+</div>
+<div class="overall">
+
+</div>

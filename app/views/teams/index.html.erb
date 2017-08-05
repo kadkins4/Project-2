@@ -26,7 +26,7 @@
       <% @teams.each do |t| %>
         <p class="team-link"><%= link_to "#{t.name}", team_path(t.id) %></p>
       <% end %>
-      <img src="#" alt="random hero">
+      <p class="team-link"><%= link_to "Create Team", new_team_path %></p>
     </div>
   </div>
 

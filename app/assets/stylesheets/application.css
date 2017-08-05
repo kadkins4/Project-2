@@ -94,6 +94,7 @@ h3, h5 {
 
 .index-container {
   width: 95%;
+  border: 2px solid black;
   background: url("http://cdn.dota2.com/apps/dota2/images/700/gameplay/bg_14.jpg") no-repeat center center fixed;
 }
 
@@ -140,4 +141,8 @@ h3, h5 {
 
 .select {
   margin: 10px;
+}
+
+.team-overview {
+  background-color: grey;
 }
