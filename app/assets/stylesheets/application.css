@@ -22,6 +22,27 @@ body {
   color: white
 }
 
+.btn {
+  border: 2px solid black;
+  padding: 7px;
+  text-align: center;
+  font-size: 24px;
+  text-transform: uppercase;
+  border-radius: 10%;
+  background-color: rgba(10,10,10,.7);
+  margin: 0;
+}
+
+.btn a {
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: rgba(255,255,255,.5);
+}
+
 nav {
   width: 100%;
   margin: 0 0 10px 0;

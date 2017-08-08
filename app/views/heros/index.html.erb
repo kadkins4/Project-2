@@ -1,10 +1,14 @@
+<h3>All Heroes</h3>
+
 <div class="hero-pool">
 
   <% @heros.each do |hero| %>
-    <% if hero.team.name == "No Team" %>
-      <%= hero.name %>
+  <a href="heros/<%= hero.id %>">
+    <div class="">
       <img src="<%= hero.image %>">
-    <% end %>
+      <p><%= hero.name %></p>
+    </div>
+  </a>
   <% end %>
 
 </div>
