@@ -107,6 +107,10 @@ footer {
   align-items: center;
 }
 
+h1 {
+  color: #9d0a0a;
+}
+
 h3, h5 {
   text-align: center;
 }
@@ -127,6 +131,12 @@ h3, h5 {
 .about {
   flex-grow: 1;
   width: 33%;
+}
+
+.wrapper {
+  margin: 10px 0 0 0;
+  display: flex;
+  justify-content: center;
 }
 
 .hero {
