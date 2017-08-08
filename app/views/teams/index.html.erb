@@ -25,8 +25,8 @@
       </p>
       <% @teams.each do |t| %>
         <p class="team-link"><%= link_to "#{t.name}", team_path(t.id) %></p>
+        <!-- run through heroes on team and have small img of each under the team. -->
       <% end %>
-      <p class="team-link"><%= link_to "Create Team", new_team_path %></p>
     </div>
   </div>
 

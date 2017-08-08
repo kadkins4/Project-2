@@ -1,0 +1,13 @@
+<h3><%= @team.name %></h3>
+
+<div class="">
+
+  <% @heros.each do |hero| %>
+    <% if hero.team.name == "unpicked" %>
+      <img src="<%= hero.image %>" class="click-add">
+    <% end %>
+  <% end %>
+
+</div>
+
+<!-- add hero to team when clicked... -->

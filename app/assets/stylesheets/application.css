@@ -163,15 +163,36 @@ h3, h5 {
 .hero-outer {
   display: flex;
   flex-direction: column;
+  width: 18%;
   margin: .5%;
   border: 2px solid white;
   border-radius: 3%;
   padding: 1%;
-  background-color: rgba(200,200,200,.5);
   text-align: center;
   flex-grow: 1;
 }
 
-.primary-att-logo {
-  width: 25%;
+h5 {
+  margin: 0;
+}
+
+.agi {
+  background-color: rgba(62, 119, 59, .7);
+}
+
+.int {
+  background-color: rgba(35, 136, 173, .7);
+}
+
+.str {
+  background-color: rgba(216, 27, 34, .7);
+}
+
+.hero-img {
+  width: 90px;
+  height: 90px;
+}
+
+.hero-inner {
+  margin: 0;
 }
