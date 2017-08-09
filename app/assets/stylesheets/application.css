@@ -156,6 +156,11 @@ h3, h5 {
 .hero {
   flex-grow: 1;
   width: 33%;
+  transition: all 1s ease;
+}
+
+.hero:hover {
+  -webkit-transform: rotate(2deg);
 }
 
 .composition {
@@ -241,4 +246,38 @@ h5 {
 
 .hero-inner {
   margin: 0;
+}
+
+.hero-pool {
+  margin: 3%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+
+.area-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.hero-profile img {
+  border-radius: 2%;
+  border: 2px solid grey;
+}
+
+.wrapper-2 {
+  margin: 5%;
+  display: flex;
+  justify-content: center;
 }

@@ -1,19 +1,50 @@
-<div class="">
-  <% if :back == edit_hero_path %>
-    <%= link_to "Heroes", heros_path %>
-  <% else %>
-    <%= link_to "Back", :back %>
-  <% end %>
+<p>
+<% if :back == edit_hero_path %>
+  <%= link_to "Heroes", heros_path %> | <%= link_to "Edit", edit_hero_path %>
+<% else %>
+  <%= link_to "Back", :back %> | <%= link_to "Edit", edit_hero_path %>
+<% end %>
+</p>
+<h3><%= @hero.name %></h3>
+<div class="wrapper-2">
+  <div class="hero-profile">
 <!-- show more info about hero and link to admin only edit -->
-    <h3><%= @hero.name %></h3>
-    <img src="<%= @hero.image %>">
+  <img src="<%= @hero.image %>">
+</div>
+  <div class="area-2">
     <ul>
-      <li><%= @hero.primary %></li>
-      <li><%= @hero.complexity %></li>
-      <li><%= @hero.description %></li>
-      <li><%= @hero.playing %></li>
-      <li><%= @hero.with %></li>
-      <li><%= @hero.against %></li>
+      <li>Primary Attribute:
+        <% if @hero.primary == "str" %>
+          Strength
+        <% elsif @hero.primary == "agi" %>
+          Agility
+        <% else %>
+          Intelligence
+        <% end %>
+      </li>
+      <li>Complexity:
+        <% if @hero.complexity.to_i == 1 %>
+          Normal
+        <% elsif @hero.complexity.to_i == 2 %>
+          Intermediate
+        <% else %>
+          Advanced
+        <% end %>
+      </li>
+      <li> About:
+        <%= @hero.description %>
+      </li>
+      <hr>
+      <p>*Remember DOTA is a situational game, there is no one all ecompassing way to play any hero.</p>
+      <li> Tips for Playing:
+        <%= @hero.playing %>
+      </li>
+      <li> On Your Team:
+        <%= @hero.with %>
+      </li>
+      <li> Playing Against:
+        <%= @hero.against %>
+      </li>
     </ul>
-    <%= link_to "Edit", edit_hero_path %>
+  </div>
 </div>

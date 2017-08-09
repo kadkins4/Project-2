@@ -1,14 +1,16 @@
 <h3>All Heroes</h3>
-<%= link_to "Home", teams_path %>
-<%= link_to "Create Hero", new_hero_path %>
+<p>
+  <%= link_to "Home", teams_path %> | 
+  <%= link_to "Create Hero", new_hero_path %>
+</p>
 <div class="hero-pool">
 
   <% @heros.each do |hero| %>
   <a href="heros/<%= hero.id %>">
     <div class="hero">
       <img src="<%= hero.image %>">
-      <p><%= hero.name %></p>
     </div>
+      <p class="hide show"><%= hero.name %></p>
   </a>
   <% end %>
 
