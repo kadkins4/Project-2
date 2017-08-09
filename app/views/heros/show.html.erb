@@ -1,9 +1,5 @@
 <p>
-<% if :back == edit_hero_path %>
   <%= link_to "Heroes", heros_path %> | <%= link_to "Edit", edit_hero_path %>
-<% else %>
-  <%= link_to "Back", :back %> | <%= link_to "Edit", edit_hero_path %>
-<% end %>
 </p>
 <h3><%= @hero.name %></h3>
 <div class="wrapper-2">

@@ -96,7 +96,7 @@ footer {
   color: green;
 }
 
-.alert {
+.fail {
   color: red;
 }
 
@@ -309,4 +309,12 @@ h5 {
 .bottom {
   display: flex;
   justify-content: space-around;
+}
+
+.wrapper-4 {
+  margin: 20px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }

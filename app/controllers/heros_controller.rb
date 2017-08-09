@@ -19,7 +19,9 @@ class HerosController < ApplicationController
 
   def create
     @hero = Hero.create!(hero_params)
+
     redirect_to heros_path
+    flash[:notice] = "Created #{@hero.name}!"
   end
 
   def update
@@ -28,7 +30,7 @@ class HerosController < ApplicationController
     @hero.update!(hero_params)
 
     redirect_to hero_path
-    flash[:notice] = "Updated #{@hero.name}"
+    flash[:notice] = "Updated #{@hero.name}!"
   end
 
 private
