@@ -4,9 +4,9 @@
     <div class="team-name">
       <h3><%= @team.name %></h3>
       <p>
-        <%= link_to "HOME", teams_path %>
-        <%= link_to "RADIANT", "/teams/#{@radiant.id}" %>
-        <%= link_to "DIRE", "/teams/#{@dire.id}" %>
+        <%= link_to "HOME", teams_path %> |
+        <%= link_to "RADIANT", "/teams/#{@radiant.id}" %> |
+        <%= link_to "DIRE", "/teams/#{@dire.id}" %> |
         <%= link_to "NO TEAM", "/teams/#{@unpicked.id}" %>
       </p>
     </div>

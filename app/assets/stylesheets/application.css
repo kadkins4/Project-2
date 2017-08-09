@@ -22,7 +22,7 @@ body {
   color: white
 }
 
-.btn {
+.btn-2 {
   border: 2px solid black;
   padding: 7px;
   text-align: center;
@@ -33,13 +33,13 @@ body {
   margin: 0;
 }
 
-.btn a {
+.btn-2 a, p a {
   color: white;
   font-weight: 600;
   text-decoration: none;
 }
 
-.btn:hover {
+.btn-2:hover {
   background-color: rgba(255,255,255,.5);
 }
 
@@ -151,6 +151,12 @@ h3, h5 {
   margin: 10px 0 0 0;
   display: flex;
   justify-content: center;
+}
+
+.heros {
+  flex-grow: 1;
+  width: 33%;
+  transition: all 1s ease;
 }
 
 .hero {
