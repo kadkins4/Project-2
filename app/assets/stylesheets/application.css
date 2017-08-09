@@ -117,6 +117,19 @@ h3, h5 {
 
 /*index page*/
 
+#ti-prize {
+  font-size: 36px;
+  text-align: center;
+}
+
+#ti-prize a {
+  color: white;
+}
+
+#ti-prize span {
+  color: #9d0a0a;
+}
+
 .index-container {
   width: 95%;
   border: 2px solid black;
@@ -126,6 +139,7 @@ h3, h5 {
 .main-container {
   display: flex;
   justify-content: space-around;
+  background-color: rgba(255,255,255,.05);
 }
 
 .about {
@@ -205,6 +219,7 @@ h3, h5 {
 
 h5 {
   margin: 0;
+  font-size: 20px;
 }
 
 .agi {

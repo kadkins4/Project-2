@@ -5,11 +5,9 @@
       <h3><%= @team.name %></h3>
       <p>
         <%= link_to "HOME", teams_path %>
-        <% if @team.name = "Radiant" %>
-          <%= link_to "DIRE", "/teams/2" %>
-        <% else %>
-          <%= link_to "RADIANT", "/teams/1" %>
-        <% end %>
+        <%= link_to "RADIANT", "/teams/#{@radiant.id}" %>
+        <%= link_to "DIRE", "/teams/#{@dire.id}" %>
+        <%= link_to "NO TEAM", "/teams/#{@unpicked.id}" %>
       </p>
     </div>
     <div class="team-stat">
@@ -44,8 +42,8 @@
         <h5><%= h.name %></h5>
         <div class="hero-inner">
           <img src="<%= h.image %>" alt="<%= h.name %> profile picture" class="hero-img">
-          <p><small><%= h.description %></small></p>
-          <p><small><%= h.playing %></small></p>
+          <p><small><b>Description:</b> <%= h.description %></small></p>
+          <p><small><b>Tips For Playing:</b> <%= h.playing %></small></p>
         </div>
         <p>clear</p>
 

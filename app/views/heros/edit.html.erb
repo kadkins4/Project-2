@@ -1,33 +1,6 @@
 <%= @hero.name %>
 <img src="<%= @hero.image %>" alt="<%= @hero.name %> Profile">
 
-<%= form_for [@team, @hero] do |f| %>
-  <%= f.label :name %>
-  <%= f.text_field :name %>
+<%= render 'form' %>
 
-  <%= f.label :primary %>
-  <%= f.text_field :primary %>
-
-  <%= f.label :image %>
-  <%= f.text_area :image %>
-
-  <%= f.label :complexity %>
-  <%= f.text_field :complexity %>
-
-  <%= f.label :description %>
-  <%= f.text_area :description %>
-
-  <%= f.label :playing %>
-  <%= f.text_area :playing %>
-
-  <%= f.label :with %>
-  <%= f.text_area :with %>
-
-  <%= f.label :against %>
-  <%= f.text_area :against %>
-
-  <%= f.label :team_id %>
-  <%= f.text_field :team_id %>
-
-  <%= f.submit "Update #{@hero.name}" %>
-<% end %>
+<%= link_to "Cancel", hero_path %>

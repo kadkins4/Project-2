@@ -10,14 +10,24 @@ class HerosController < ApplicationController
 
   def edit
     # if current_user == admin
-    @team = Team.find(params[:id])
     @hero = Hero.find(params[:id])
+  end
+
+  def new
+    @hero = Hero.new
+  end
+
+  def create
+    @hero = Hero.create!(hero_params)
+    redirect_to heros_path
   end
 
   def update
     # if current_user == admin
     @hero = Hero.find(params[:id])
     @hero.update!(hero_params)
+
+    redirect_to hero_path
     flash[:notice] = "Updated #{@hero.name}"
   end
 

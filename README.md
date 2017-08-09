@@ -22,3 +22,16 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+$ STEAM_API_KEY=C8AFB19A9F741B4400663C664B2023DB
+$ export STEAM_API_KEY
+
+heros < index.html.erb
+<% @api.heroes.each do |h| %>
+  <a href="heros/<%= h.id %>">
+    <div class="hero">
+      <img src="<%= h.image_url %>">
+      <%= h.name %>
+    </div>
+  </a>
+<% end %>

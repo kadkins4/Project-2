@@ -9,24 +9,25 @@
       </p>
       <p class="btn"><%= link_to "113 Heroes", heros_path %></p>
       <div class="wrapper">
-        <img src="https://www.9custom.com/media/catalog/product/cache/1/small_image/230x/9df78eab33525d08d6e5fb8d27136e95/p/u/puck.png" class="puck" alt="Greetings!">
+        <img src="https://www.9custom.com/media/catalog/product/cache/1/small_image/230x/9df78eab33525d08d6e5fb8d27136e95/p/u/puck.png" class="puck" alt="Puck">
         <p><small>This hero, Puck, is my all time favorite.  Primarily a mid-lane hero, Puck is a great initiator and takes A LOT of skill and fast reactions, in conjunction with planning/foresight, to be effective. If you are new to the game, avoid playing this hero.</small></p>
       </div>
     </div>
     <div class="about select">
       <h5>Basics</h5>
       <p>
-      Fashion axe scenester tilde listicle tofu slow-carb edison bulb iceland pitchfork intelligentsia banh mi occupy small batch. Cliche selvage subway tile fam stumptown you probably haven't heard of them keytar iPhone single-origin coffee meditation microdosing. Meh YOLO cold-pressed marfa kogi kitsch meggings fam palo santo air plant banh mi dreamcatcher pitchfork. Pop-up dreamcatcher keytar church-key pork belly photo booth, succulents drinking vinegar pour-over bushwick YOLO mixtape banh mi.
+        A 5 on 5 game that requires teamwork, planning, execution, and fast reflexes. Both teams fight to destroy each others Ancient, which is surrounded by objectives (towers, buildings, etc).  The map is separated into three distinct lanes, (mid, top, and bottom).
       </p>
-      <h5>Pro Scene</h5>
-      <p>
-      Narwhal crucifix lomo fanny pack disrupt hashtag tbh trust fund ramps selvage scenester. Fashion axe scenester tilde listicle tofu slow-carb edison bulb iceland pitchfork intelligentsia banh mi occupy small batch. Cliche selvage subway tile fam stumptown you probably haven't heard of them keytar iPhone single-origin coffee meditation microdosing. Meh YOLO cold-pressed marfa kogi kitsch meggings fam palo santo air plant banh mi dreamcatcher pitchfork. Pop-up dreamcatcher keytar church-key pork belly photo booth, succulents drinking vinegar pour-over bushwick YOLO mixtape banh mi.
+      <h5>E-Sports Ticker</h5>
+      <p id="ti-prize">
+        Current <a href="http://www.dota2.com/international/overview/">International 2017</a> Prize Pool: <span>$24,160,541</span>
       </p>
+      <p><a href="https://www.youtube.com/watch?v=LX9aOvbng68">[8/8/17]</a> Returning TI6 Champions EG (USA) Loses to Empire (RUS) [2-0] - Resolution's SVEN cleaves through Universe and the Americans</p>
     </div>
     <div class="composition select">
       <h5>Team Composition</h5>
       <p>
-      Narwhal crucifix lomo fanny pack disrupt hashtag tbh trust fund ramps selvage scenester.
+      Draft your team on the Radiant or Dire and see how hard complex your lineup is and see tips on how to play the heroes.  More features to come.
       </p>
       <% @teams.each do |t| %>
         <p class="team-link"><%= link_to "#{t.name}", team_path(t.id) %></p>

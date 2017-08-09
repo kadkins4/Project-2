@@ -8,6 +8,8 @@ class TeamsController < ApplicationController
     @team = Team.find(params[:id])
     @heros = @team.heros
     @unpicked = Team.find_by_name(name = "unpicked")
+    @dire = Team.find_by_name(name = "Dire")
+    @radiant = Team.find_by_name(name = "Radiant")
   end
 
   def edit
