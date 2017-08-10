@@ -14,7 +14,7 @@ This guide is meant to provide new players the ability to get an overview of her
 
 - **MVP:** HEROES & TEAMS (Radiant & Dire) - this would lay the ground work for drafting sync where hopefully in a later iteration, I can link to STEAM and update as players are drafting in Captain's Mode or All Pick, giving players details in Real Time.  As for now, a small pool of heroes have basic tips and profiles.
 
-- **USERS & COMMENTS:** Create a forum like atmosphere for tips, comments, advice, and an overall better/less troll'y place than Reddit/Dota2.
+- **USERS & COMMENTS:** Create a forum like atmosphere for tips, comments, advice, and an overall better/less troll'y place taihan Reddit/Dota2.
 
 - **SKILLS:** Introduce all hero skills, scaling, etc.
 
