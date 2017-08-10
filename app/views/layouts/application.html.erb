@@ -10,6 +10,13 @@
     <link rel="stylesheet" href="/app/assets/stylesheets/application.css">
   </head>
   <body>
+    <% if !current_user %>
+    | <%= link_to "Sign Up", new_user_registration_path %> |
+    <%= link_to "Sign In", new_user_session_path %> |
+    <% else %>
+    | Welcome, <%= current_user.email %> |
+    <%= link_to "Sign Out", destroy_user_session_path, :method => :delete%> |
+    <% end %>
     <nav>
       <div class="title-div">
         <h1 class="title">DOTA</h1>

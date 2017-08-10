@@ -60,24 +60,6 @@ footer {
   justify-content: center;
 }
 
-.kla {
-  font-weight: 600;
-  font-size: 20px;
-  border: 2px solid transparent;
-  text-decoration: none;
-  color: #393C3E;
-  text-transform: uppercase;
-  padding: 6px 0 2px 0;
-  margin: 1px;
-}
-
-.kla:hover {
-  border-top: 2px solid black;
-  border-bottom: 2px solid black;
-  color: #64686B;
-  border-radius: 50%;
-  transition: color 2s linear .5s, border-radius 2s linear .5s;
-}
 
 .title-div {
   display: flex;
@@ -324,4 +306,24 @@ h5 {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.kla {
+  font-weight: 600;
+  font-size: 20px;
+  border: 2px solid transparent;
+  text-decoration: none;
+  color: #393C3E;
+  text-transform: uppercase;
+  padding: 6px 0 2px 0;
+  margin: 1px;
+}
+
+.kla:hover {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  color: #64686B;
+  border-radius: 50%;
+  transition: color 2s linear .5s, border-radius 2s linear .5s;
+  text-decoration: none;
 }
