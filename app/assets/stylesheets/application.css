@@ -19,7 +19,8 @@ body {
   width: 100%;
   margin: 0;
   background-color: rgba(190, 190, 190, 1);
-  color: white
+  color: white;
+  font-family: Garamond;
 }
 
 .btn-2 {
